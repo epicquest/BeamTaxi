@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.epicqueststudios.beamtaxi.presentation.viewmodels.SharedViewModel" />
+        <variable
+            name="profile"
+            type="com.epicqueststudios.beamtaxi.data.models.ProfileModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/photo_size"
+            android:layout_height="@dimen/photo_size"
+            android:background="@android:color/darker_gray"
+            android:layout_margin="@dimen/photo_margin_top"
+            app:profileImage="@{viewModel.photoBitmap}"
+            android:contentDescription="@string/menu_profile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/btnCamera"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            app:srcCompat="@drawable/ic_menu_camera"
+            android:layout_margin="@dimen/margin_default"
+            android:padding="@dimen/padding"
+            android:onClick="@{() -> viewModel.takePhoto()}"
+            android:contentDescription="@string/take_photo"
+            app:layout_constraintTop_toBottomOf="@id/ivProfile"
+            app:layout_constraintStart_toStartOf="@id/ivProfile"/>
+
+        <ImageButton
+            android:id="@+id/btnGallery"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            app:srcCompat="@drawable/ic_menu_gallery"
+            android:layout_margin="@dimen/margin_default"
+            android:padding="@dimen/padding"
+            android:contentDescription="@string/select_from_gallery"
+            android:onClick="@{() -> viewModel.searchGallery()}"
+            app:layout_constraintTop_toBottomOf="@id/ivProfile"
+            app:layout_constraintStart_toEndOf="@id/btnCamera"/>
+
+        <EditText
+            android:id="@+id/editProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_margin="@dimen/margin_big"
+            android:hint="@string/profileHint"
+            android:text="@{viewModel.profile.name}"
+            app:textChangedListener="@{viewModel.nameTextWatcher}"
+            app:layout_constraintTop_toBottomOf="@id/btnGallery"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

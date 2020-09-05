@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">EQSBeamTaxi</string>
+    <string name="title_activity_maps">BeamTaxi</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_show_location">Move to your location</string>
+
+    <string name="menu_map">Map</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_share">Share</string>
+
+    <string name="permissions_not_granted">Required permissions are not granted.</string>
+    <string name="set_location_manually">Location is manually set to %1$s</string>
+    <string name="action_reset_location">Reset location</string>
+    <string name="action_reset_cars">Reset cars</string>
+    <string name="take_photo">Take a photo</string>
+    <string name="select_from_gallery">Select image from gallery</string>
+    <string name="profileHint">Type your name here</string>
+    <string name="communicate">Communicate</string>
+</resources>

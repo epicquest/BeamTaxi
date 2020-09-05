@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="photo_margin_top">50dp</dimen>
+    <dimen name="photo_size">300dp</dimen>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="button_size">64dp</dimen>
+    <dimen name="margin_big">24dp</dimen>
+</resources>

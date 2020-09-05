@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "370397408067",
+    "firebase_url": "https://beamtaxi-b38c7.firebaseio.com",
+    "project_id": "beamtaxi-b38c7",
+    "storage_bucket": "beamtaxi-b38c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370397408067:android:1d97204bcac6d95f25ddf6",
+        "android_client_info": {
+          "package_name": "com.epicqueststudios.beamtaxi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370397408067-l551oo3sghhgse1ottpkqb7c2kjiv07u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf957q0Cj_5ehMBQRHeF-GU648opK1NpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370397408067-l551oo3sghhgse1ottpkqb7c2kjiv07u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
